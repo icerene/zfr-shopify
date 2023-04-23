@@ -167,6 +167,7 @@ use Psr\Http\Client\ClientExceptionInterface;
  *
  * FULFILLMENTS RELATED METHODS:
  *
+ * @method array createFulfillmentNew(array $args = []){@command Shopify CreateFulfillmentNew}
  * @method array getFulfillments(array $args = []) {@command Shopify GetFulfillments}
  * @method int getFulfillmentCount(array $args = []) {@command Shopify GetFulfillmentCount}
  * @method array getFulfillment(array $args = []) {@command Shopify GetFulfillment}

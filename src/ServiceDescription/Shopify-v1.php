@@ -2063,6 +2063,21 @@ return [
          * --------------------------------------------------------------------------------
          */
 
+        'CreateFulfillmentNew' => [
+            'httpMethod'       => 'POST',
+            'uri'              => 'admin/api/{version}/fulfillments.json',
+            'responseModel'    => 'GenericModel',
+            'summary'          => 'Creates a fulfillment for one or many fulfillment orders',
+            'data'             => ['root_key' => 'fulfillment'],
+            'parameters'       => [
+                'version' => [
+                    'description' => 'API version',
+                    'location'    => 'uri',
+                    'type'        => 'string',
+                    'required'    => true
+                ]
+            ]
+        ],
         'GetFulfillments' => [
             'httpMethod'       => 'GET',
             'uri'              => 'admin/api/{version}/orders/{order_id}/fulfillments.json',
